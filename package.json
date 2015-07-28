@@ -1,0 +1,24 @@
+{
+  "name": "KrispyKode",
+  "version": "0.0.1",
+  "description": "A webserver which accepts notifications from a spark/particle core and sends messages to Apple's Push Notification server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoonshotLab/KrispyKode.git"
+  },
+  "author": "Ike Diggs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoonshotLab/KrispyKode/issues"
+  },
+  "homepage": "https://github.com/MoonshotLab/KrispyKode",
+  "dependencies": {
+    "apn": "^1.7.4",
+    "sparknode": "^0.4.9"
+  }
+}
