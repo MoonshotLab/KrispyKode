@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE79A37A1B67C12A003A3539 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE79A3791B67C12A003A3539 /* main.m */; };
+		DE79A37D1B67C12A003A3539 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE79A37C1B67C12A003A3539 /* AppDelegate.m */; };
+		DE79A3801B67C12A003A3539 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE79A37F1B67C12A003A3539 /* ViewController.m */; };
+		DE79A3831B67C12A003A3539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3811B67C12A003A3539 /* Main.storyboard */; };
+		DE79A3851B67C12A003A3539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3841B67C12A003A3539 /* Images.xcassets */; };
+		DE79A3881B67C12A003A3539 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3861B67C12A003A3539 /* LaunchScreen.xib */; };
+		DE79A3941B67C12A003A3539 /* hotLightDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE79A3931B67C12A003A3539 /* hotLightDemoTests.m */; };
+		DE79A3A81B67C345003A3539 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE79A3A71B67C345003A3539 /* InterfaceController.m */; };
+		DE79A3AB1B67C345003A3539 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE79A3AA1B67C345003A3539 /* NotificationController.m */; };
+		DE79A3AD1B67C345003A3539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3AC1B67C345003A3539 /* Images.xcassets */; };
+		DE79A3B11B67C345003A3539 /* hotLightDemo WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3B01B67C345003A3539 /* hotLightDemo WatchKit App.app */; };
+		DE79A3B91B67C345003A3539 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3B71B67C345003A3539 /* Interface.storyboard */; };
+		DE79A3BB1B67C345003A3539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE79A3BA1B67C345003A3539 /* Images.xcassets */; };
+		DE79A3BE1B67C345003A3539 /* hotLightDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE79A3A11B67C345003A3539 /* hotLightDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE79A38E1B67C12A003A3539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE79A36C1B67C12A003A3539 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE79A3731B67C12A003A3539;
+			remoteInfo = hotLightDemo;
+		};
+		DE79A3B21B67C345003A3539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE79A36C1B67C12A003A3539 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE79A3AF1B67C345003A3539;
+			remoteInfo = "hotLightDemo WatchKit App";
+		};
+		DE79A3BC1B67C345003A3539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE79A36C1B67C12A003A3539 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE79A3A01B67C345003A3539;
+			remoteInfo = "hotLightDemo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE79A3C51B67C345003A3539 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE79A3BE1B67C345003A3539 /* hotLightDemo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE79A3741B67C12A003A3539 /* hotLightDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotLightDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79A3781B67C12A003A3539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE79A3791B67C12A003A3539 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE79A37B1B67C12A003A3539 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE79A37C1B67C12A003A3539 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE79A37E1B67C12A003A3539 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE79A37F1B67C12A003A3539 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE79A3821B67C12A003A3539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE79A3841B67C12A003A3539 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE79A3871B67C12A003A3539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DE79A38D1B67C12A003A3539 /* hotLightDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hotLightDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79A3921B67C12A003A3539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE79A3931B67C12A003A3539 /* hotLightDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotLightDemoTests.m; sourceTree = "<group>"; };
+		DE79A3A11B67C345003A3539 /* hotLightDemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "hotLightDemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79A3A41B67C345003A3539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE79A3A51B67C345003A3539 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DE79A3A61B67C345003A3539 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		DE79A3A71B67C345003A3539 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		DE79A3A91B67C345003A3539 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		DE79A3AA1B67C345003A3539 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		DE79A3AC1B67C345003A3539 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE79A3B01B67C345003A3539 /* hotLightDemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hotLightDemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79A3B61B67C345003A3539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE79A3B81B67C345003A3539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DE79A3BA1B67C345003A3539 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE79A3711B67C12A003A3539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A38A1B67C12A003A3539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A39E1B67C345003A3539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE79A36B1B67C12A003A3539 = {
+			isa = PBXGroup;
+			children = (
+				DE79A3761B67C12A003A3539 /* hotLightDemo */,
+				DE79A3901B67C12A003A3539 /* hotLightDemoTests */,
+				DE79A3A21B67C345003A3539 /* hotLightDemo WatchKit Extension */,
+				DE79A3B41B67C345003A3539 /* hotLightDemo WatchKit App */,
+				DE79A3751B67C12A003A3539 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE79A3751B67C12A003A3539 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3741B67C12A003A3539 /* hotLightDemo.app */,
+				DE79A38D1B67C12A003A3539 /* hotLightDemoTests.xctest */,
+				DE79A3A11B67C345003A3539 /* hotLightDemo WatchKit Extension.appex */,
+				DE79A3B01B67C345003A3539 /* hotLightDemo WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE79A3761B67C12A003A3539 /* hotLightDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A37B1B67C12A003A3539 /* AppDelegate.h */,
+				DE79A37C1B67C12A003A3539 /* AppDelegate.m */,
+				DE79A37E1B67C12A003A3539 /* ViewController.h */,
+				DE79A37F1B67C12A003A3539 /* ViewController.m */,
+				DE79A3811B67C12A003A3539 /* Main.storyboard */,
+				DE79A3841B67C12A003A3539 /* Images.xcassets */,
+				DE79A3861B67C12A003A3539 /* LaunchScreen.xib */,
+				DE79A3771B67C12A003A3539 /* Supporting Files */,
+			);
+			path = hotLightDemo;
+			sourceTree = "<group>";
+		};
+		DE79A3771B67C12A003A3539 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3781B67C12A003A3539 /* Info.plist */,
+				DE79A3791B67C12A003A3539 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE79A3901B67C12A003A3539 /* hotLightDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3931B67C12A003A3539 /* hotLightDemoTests.m */,
+				DE79A3911B67C12A003A3539 /* Supporting Files */,
+			);
+			path = hotLightDemoTests;
+			sourceTree = "<group>";
+		};
+		DE79A3911B67C12A003A3539 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3921B67C12A003A3539 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE79A3A21B67C345003A3539 /* hotLightDemo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3A61B67C345003A3539 /* InterfaceController.h */,
+				DE79A3A71B67C345003A3539 /* InterfaceController.m */,
+				DE79A3A91B67C345003A3539 /* NotificationController.h */,
+				DE79A3AA1B67C345003A3539 /* NotificationController.m */,
+				DE79A3AC1B67C345003A3539 /* Images.xcassets */,
+				DE79A3A31B67C345003A3539 /* Supporting Files */,
+			);
+			path = "hotLightDemo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DE79A3A31B67C345003A3539 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3A41B67C345003A3539 /* Info.plist */,
+				DE79A3A51B67C345003A3539 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE79A3B41B67C345003A3539 /* hotLightDemo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3B71B67C345003A3539 /* Interface.storyboard */,
+				DE79A3BA1B67C345003A3539 /* Images.xcassets */,
+				DE79A3B51B67C345003A3539 /* Supporting Files */,
+			);
+			path = "hotLightDemo WatchKit App";
+			sourceTree = "<group>";
+		};
+		DE79A3B51B67C345003A3539 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE79A3B61B67C345003A3539 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE79A3731B67C12A003A3539 /* hotLightDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE79A3971B67C12A003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemo" */;
+			buildPhases = (
+				DE79A3701B67C12A003A3539 /* Sources */,
+				DE79A3711B67C12A003A3539 /* Frameworks */,
+				DE79A3721B67C12A003A3539 /* Resources */,
+				DE79A3C51B67C345003A3539 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE79A3BD1B67C345003A3539 /* PBXTargetDependency */,
+			);
+			name = hotLightDemo;
+			productName = hotLightDemo;
+			productReference = DE79A3741B67C12A003A3539 /* hotLightDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE79A38C1B67C12A003A3539 /* hotLightDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE79A39A1B67C12A003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemoTests" */;
+			buildPhases = (
+				DE79A3891B67C12A003A3539 /* Sources */,
+				DE79A38A1B67C12A003A3539 /* Frameworks */,
+				DE79A38B1B67C12A003A3539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE79A38F1B67C12A003A3539 /* PBXTargetDependency */,
+			);
+			name = hotLightDemoTests;
+			productName = hotLightDemoTests;
+			productReference = DE79A38D1B67C12A003A3539 /* hotLightDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE79A3A01B67C345003A3539 /* hotLightDemo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE79A3C21B67C345003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemo WatchKit Extension" */;
+			buildPhases = (
+				DE79A39D1B67C345003A3539 /* Sources */,
+				DE79A39E1B67C345003A3539 /* Frameworks */,
+				DE79A39F1B67C345003A3539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE79A3B31B67C345003A3539 /* PBXTargetDependency */,
+			);
+			name = "hotLightDemo WatchKit Extension";
+			productName = "hotLightDemo WatchKit Extension";
+			productReference = DE79A3A11B67C345003A3539 /* hotLightDemo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		DE79A3AF1B67C345003A3539 /* hotLightDemo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE79A3BF1B67C345003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemo WatchKit App" */;
+			buildPhases = (
+				DE79A3AE1B67C345003A3539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hotLightDemo WatchKit App";
+			productName = "hotLightDemo WatchKit App";
+			productReference = DE79A3B01B67C345003A3539 /* hotLightDemo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE79A36C1B67C12A003A3539 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Joe Longstreet";
+				TargetAttributes = {
+					DE79A3731B67C12A003A3539 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4DSRKM8HKJ;
+					};
+					DE79A38C1B67C12A003A3539 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DE79A3731B67C12A003A3539;
+					};
+					DE79A3A01B67C345003A3539 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4DSRKM8HKJ;
+					};
+					DE79A3AF1B67C345003A3539 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4DSRKM8HKJ;
+					};
+				};
+			};
+			buildConfigurationList = DE79A36F1B67C12A003A3539 /* Build configuration list for PBXProject "hotLightDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE79A36B1B67C12A003A3539;
+			productRefGroup = DE79A3751B67C12A003A3539 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE79A3731B67C12A003A3539 /* hotLightDemo */,
+				DE79A38C1B67C12A003A3539 /* hotLightDemoTests */,
+				DE79A3A01B67C345003A3539 /* hotLightDemo WatchKit Extension */,
+				DE79A3AF1B67C345003A3539 /* hotLightDemo WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE79A3721B67C12A003A3539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79A3831B67C12A003A3539 /* Main.storyboard in Resources */,
+				DE79A3881B67C12A003A3539 /* LaunchScreen.xib in Resources */,
+				DE79A3851B67C12A003A3539 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A38B1B67C12A003A3539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A39F1B67C345003A3539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79A3B11B67C345003A3539 /* hotLightDemo WatchKit App.app in Resources */,
+				DE79A3AD1B67C345003A3539 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A3AE1B67C345003A3539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79A3B91B67C345003A3539 /* Interface.storyboard in Resources */,
+				DE79A3BB1B67C345003A3539 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE79A3701B67C12A003A3539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79A3801B67C12A003A3539 /* ViewController.m in Sources */,
+				DE79A37D1B67C12A003A3539 /* AppDelegate.m in Sources */,
+				DE79A37A1B67C12A003A3539 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A3891B67C12A003A3539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79A3941B67C12A003A3539 /* hotLightDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE79A39D1B67C345003A3539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79A3AB1B67C345003A3539 /* NotificationController.m in Sources */,
+				DE79A3A81B67C345003A3539 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE79A38F1B67C12A003A3539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE79A3731B67C12A003A3539 /* hotLightDemo */;
+			targetProxy = DE79A38E1B67C12A003A3539 /* PBXContainerItemProxy */;
+		};
+		DE79A3B31B67C345003A3539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE79A3AF1B67C345003A3539 /* hotLightDemo WatchKit App */;
+			targetProxy = DE79A3B21B67C345003A3539 /* PBXContainerItemProxy */;
+		};
+		DE79A3BD1B67C345003A3539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE79A3A01B67C345003A3539 /* hotLightDemo WatchKit Extension */;
+			targetProxy = DE79A3BC1B67C345003A3539 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE79A3811B67C12A003A3539 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE79A3821B67C12A003A3539 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE79A3861B67C12A003A3539 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE79A3871B67C12A003A3539 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DE79A3B71B67C345003A3539 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE79A3B81B67C345003A3539 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE79A3951B67C12A003A3539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Longstreet (UK28SV3652)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "46821911-6cf6-4d45-b995-0f2b97da9385";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE79A3961B67C12A003A3539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Longstreet (UK28SV3652)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "46821911-6cf6-4d45-b995-0f2b97da9385";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE79A3981B67C12A003A3539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Longstreet (UK28SV3652)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Longstreet (UK28SV3652)";
+				INFOPLIST_FILE = hotLightDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4105cce0-7dfa-4b34-8dc5-8820e5f0447f";
+			};
+			name = Debug;
+		};
+		DE79A3991B67C12A003A3539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph Longstreet (UK28SV3652)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph Longstreet (UK28SV3652)";
+				INFOPLIST_FILE = hotLightDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4105cce0-7dfa-4b34-8dc5-8820e5f0447f";
+			};
+			name = Release;
+		};
+		DE79A39B1B67C12A003A3539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hotLightDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hotLightDemo.app/hotLightDemo";
+			};
+			name = Debug;
+		};
+		DE79A39C1B67C12A003A3539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hotLightDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hotLightDemo.app/hotLightDemo";
+			};
+			name = Release;
+		};
+		DE79A3C01B67C345003A3539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = hotLightDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "hotLightDemo WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		DE79A3C11B67C345003A3539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = hotLightDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "hotLightDemo WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		DE79A3C31B67C345003A3539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hotLightDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DE79A3C41B67C345003A3539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "hotLightDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE79A36F1B67C12A003A3539 /* Build configuration list for PBXProject "hotLightDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE79A3951B67C12A003A3539 /* Debug */,
+				DE79A3961B67C12A003A3539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE79A3971B67C12A003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE79A3981B67C12A003A3539 /* Debug */,
+				DE79A3991B67C12A003A3539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE79A39A1B67C12A003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE79A39B1B67C12A003A3539 /* Debug */,
+				DE79A39C1B67C12A003A3539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE79A3BF1B67C345003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE79A3C01B67C345003A3539 /* Debug */,
+				DE79A3C11B67C345003A3539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE79A3C21B67C345003A3539 /* Build configuration list for PBXNativeTarget "hotLightDemo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE79A3C31B67C345003A3539 /* Debug */,
+				DE79A3C41B67C345003A3539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE79A36C1B67C12A003A3539 /* Project object */;
+}
