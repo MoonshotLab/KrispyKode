@@ -1,97 +1,111 @@
-// This #include statement was automatically added by the Spark IDE.
 #include "neopixel/neopixel.h"
 
+#define LED_PIN D0
+#define BUTTON_PIN D2
+#define RELAY_A D4
+#define RELAY_B D5
+#define RELAY_C D6
 
-#define PIN    D0
-#define N_LEDS 50
-int inPin = D3;
-int val = 0;
-int tam = 0;
-bool hro = false;
-int r = 0;
-int g = 255;
-int b = 0;
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_LEDS, PIN, WS2812B);
+int lastButtonState = 0;
+bool hasRunOnce = false;
+
+int sectionPixelCount_A = 6;
+int sectionPixelCount_B = 5;
+int sectionPixelCount_C = 7;
+int pixelCount = sectionPixelCount_A + sectionPixelCount_B + sectionPixelCount_C;
+
+int pixelSpeed = 100;
+int sectionDelay = 1000;
+
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(pixelCount, LED_PIN, WS2812B);
+uint32_t pixelColor = strip.Color(0, 255, 0);
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(D1, OUTPUT);
-  pinMode(D2, OUTPUT);
-  pinMode(inPin, INPUT);
+  pinMode(RELAY_A, OUTPUT);
+  pinMode(RELAY_B, OUTPUT);
+  pinMode(RELAY_C, OUTPUT);
+
+  pinMode(BUTTON_PIN, INPUT);
   strip.begin();
 }
 
 void loop() {
+  int buttonState = digitalRead(BUTTON_PIN);
+  if(buttonState != lastButtonState){
 
-  val = digitalRead(inPin);
-  if (val == 1 && hro == false && tam == 0) {     // 1 ON
-    for (int i = 0; i <= 15; i++) {
-      strip.setPixelColor(i, r, g, b);
-      strip.setPixelColor(i-1, 0);
-      strip.show();
-      delay(100);
-    }
-    tam = 1;
-    hro = true;
-    digitalWrite(D1, HIGH);
-  }
-  Serial.println(val);
-
-
-  if (tam == 1 && val == 0 && hro == true) {      // 1 OFF
-    digitalWrite(D1, LOW);
-    for (int i = 15; i >= 0; i--) {
-      strip.setPixelColor(i, r, g, b);
-      strip.setPixelColor(i+1, 0);
-      strip.show();
-      delay(100);
-      tam = 2;
-      hro = false;
-    }
-  }
-
-
-
-  if (tam == 2 && val == 1 && hro == false) {       //12-3 ON
-    for (int i = 0; i <= 30; i++) {
-      strip.setPixelColor(i, r, g, b);
-      strip.setPixelColor(i-1, 0);
-      strip.show();
-      delay(50);
-      tam = 3;
-      hro = true;
-      if (i == 15) {
-        digitalWrite(D1, HIGH);
+    // first time turning switch on, turn on section A
+    if(buttonState == 1 && hasRunOnce == false) {
+      for (int i = 0; i <= sectionPixelCount_A; i++) {
+        strip.setPixelColor(i, pixelColor);
+        strip.setPixelColor(i-1, 0);
+        strip.show();
+        delay(pixelSpeed);
       }
+
+      hasRunOnce = true;
+      digitalWrite(RELAY_A, HIGH);
     }
-    digitalWrite(D2, HIGH);
-    delay(500);
-    for (int i = 30; i <= 45; i++) {
-      strip.setPixelColor(i, r, g, b);
-      strip.setPixelColor(i-1, 0);
-      strip.show();
-      delay(50);
-        if(i==40){
-            Spark.publish("middleThing","eventDetails");
+
+    // first time turning switch off, turn off section A
+    if(buttonState == 0 && hasRunOnce == true) {
+      digitalWrite(RELAY_A, LOW);
+
+      for (int i = sectionPixelCount_A; i >= 0; i--) {
+        strip.setPixelColor(i, pixelColor);
+        strip.setPixelColor(i+1, 0);
+        strip.show();
+        delay(pixelSpeed);
+      }
+
+      hasRunOnce = false;
+    }
+
+    // second time turning switch on, turn on section A, then B, then C
+    if(buttonState == 1 && hasRunOnce == false) {
+      for (int i = 0; i <= (sectionPixelCount_A + sectionPixelCount_B); i++) {
+        strip.setPixelColor(i, pixelColor);
+        strip.setPixelColor(i-1, 0);
+        strip.show();
+        delay(pixelSpeed);
+        if (i == sectionPixelCount_A) {
+          digitalWrite(RELAY_A, HIGH);
         }
+      }
+
+      digitalWrite(RELAY_B, HIGH);
+      delay(sectionDelay);
+
+      for (int i = (sectionPixelCount_A + sectionPixelCount_B); i <= pixelCount; i++) {
+        strip.setPixelColor(i, pixelColor);
+        strip.setPixelColor(i-1, 0);
+        strip.show();
+        delay(pixelSpeed);
+
+        if(i==pixelCount){
+          Spark.publish("middleThing", "eventDetails");
+          digitalWrite(RELAY_C, HIGH);
+        }
+      }
+
+      hasRunOnce = true;
+    }
+
+    // second time turning switch on, turn off section A, then B, then C
+    if(buttonState == 0 && hasRunOnce == true) {
+      for (int i = 45; i >= 0; i--) {
+        strip.setPixelColor(i, pixelColor);
+        strip.setPixelColor(i+1, 0);
+        strip.show();
+        delay(pixelSpeed);
+
+        hasRunOnce = false;
+
+        if(i==sectionPixelCount_C){ digitalWrite(RELAY_C, LOW); }
+        if(i==sectionPixelCount_B){ digitalWrite(RELAY_B, LOW); }
+        if(i==sectionPixelCount_A){ digitalWrite(RELAY_A, LOW); }
+      }
     }
   }
 
-
-  if (tam == 3 && val == 0 && hro == true) {      //321 OFF
-    for (int i = 45; i >= 0; i--) {
-      strip.setPixelColor(i, r, g, b);
-      strip.setPixelColor(i+1, 0);
-      strip.show();
-      delay(50);
-      tam = 0;
-      hro = false;
-      if(i==30){
-        digitalWrite(D2, LOW);        
-      }
-      if(i==15){
-        digitalWrite(D1, LOW);
-      }
-    }
-  }
+  lastButtonState = buttonState;
 }
