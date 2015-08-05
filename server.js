@@ -6,7 +6,7 @@ var core = new spark.Core({
   id: "55ff6d065075555327220287"
 });
 
-core.on('middleThing', function(info) {
+core.on('notifyWatch', function(info) {
 var note = new apn.Notification();
 
 note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
@@ -43,5 +43,3 @@ feedback.on("feedback", function(devices) {
     devices.forEach(function(item) {
     });
 });
-
-        

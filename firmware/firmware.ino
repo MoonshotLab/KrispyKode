@@ -82,7 +82,7 @@ void loop() {
         delay(pixelSpeed);
 
         if(i==pixelCount){
-          Spark.publish("middleThing", "eventDetails");
+          Spark.publish("notifyWatch", "deets");
           digitalWrite(RELAY_C, HIGH);
         }
       }
