@@ -1,4 +1,4 @@
-var env = require('../env-config.js')();
+var env = require('./env-config.js')();
 var spark = require('sparknode');
 var apn = require('apn');
 
@@ -7,36 +7,34 @@ var core = new spark.Core({
   id: env.SPARK_CORE_ID
 });
 
-core.on('notifyWatch', function(info) {
-var note = new apn.Notification();
 
-note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
-note.badge = 3;
-note.sound = "ping.aiff";
-note.alert = "Its On!";
-
-
-var apnConnection = new apn.Connection(options);
-var iosDevice = new apn.Device(env.IOS_TOKEN);
-apnConnection.pushNotification(note, iosDevice);
-  console.log(info);
-  console.log(info.data);
-})
-
+// log errors, do nothing
 core.on('error', function(err){
   console.log(err);
 });
 
 
+// listen for events from the spark
+core.on('notifyWatch', function(info) {
+  var notification = new apn.Notification();
+  notification.expiry = Math.floor(Date.now() / 1000) + 3600;
+  notification.badge = 3;
+  notification.sound = "ping.aiff";
+  notification.alert = "Its On!";
 
-var options = {
-    "batchFeedback": true,
-    "interval": 300
-};
+  var apnConnection = new apn.Connection();
+  var iosDevice = new apn.Device(env.IOS_TOKEN);
 
-var feedback = new apn.Feedback(options);
-feedback.on("feedback", function(devices) {
-	console.log(devices);
-    devices.forEach(function(item) {
+  apnConnection.pushNotification(notification, iosDevice);
+
+  // try and pick up failures in the APN service
+  var feedback = new apn.Feedback(options);
+  feedback.on('feedback', function(devices){
+    devices.forEach(function(item){
+      console.log('push notification feedback:', item);
     });
+  });
 });
+
+
+console.log('listening for spark', env.SPARK_CORE_ID);
