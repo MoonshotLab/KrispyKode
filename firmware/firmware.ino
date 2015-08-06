@@ -87,7 +87,7 @@ void dimSectionA(){
     strip.setPixelColor(i, pixelColor);
     strip.setPixelColor(i+1, 0);
     strip.show();
-    delay(pixelSpeed);
+    delay(pixelSpeed/2);
   }
 }
 
@@ -99,7 +99,7 @@ void dimSectionB(){
     strip.setPixelColor(pixelId, pixelColor);
     strip.setPixelColor(pixelId+1, 0);
     strip.show();
-    delay(pixelSpeed);
+    delay(pixelSpeed/2);
   }
 }
 
@@ -111,7 +111,7 @@ void dimSectionC(){
     strip.setPixelColor(pixelId, pixelColor);
     strip.setPixelColor(pixelId+1, 0);
     strip.show();
-    delay(pixelSpeed);
+    delay(pixelSpeed/2);
   }
 }
 
