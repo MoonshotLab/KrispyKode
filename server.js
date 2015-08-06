@@ -28,7 +28,7 @@ core.on('notifyWatch', function(info) {
   apnConnection.pushNotification(notification, iosDevice);
 
   // try and pick up failures in the APN service
-  var feedback = new apn.Feedback(options);
+  var feedback = new apn.Feedback();
   feedback.on('feedback', function(devices){
     devices.forEach(function(item){
       console.log('push notification feedback:', item);
