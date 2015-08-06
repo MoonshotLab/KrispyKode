@@ -1,5 +1,8 @@
 cert.pem
 key.pem
+cert.cer
+key.p12
+*.mobileprovision
 node_modules
 .DS_Store
 build/
