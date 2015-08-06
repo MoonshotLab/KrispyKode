@@ -23,7 +23,7 @@ core.on('notifyWatch', function(info) {
   notification.alert = "Its On!";
 
   var apnConnection = new apn.Connection();
-  var iosDevice = new apn.Device(env.IOS_TOKEN);
+  var iosDevice = new apn.Device("d7a9d3f9 9fc48fe9 12123193 d35381b1 c04f5119 a2b99ef6 f9ee3783 21abb2c1");
 
   apnConnection.pushNotification(notification, iosDevice);
 
